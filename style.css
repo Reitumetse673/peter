@@ -1,0 +1,410 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	
+	font-size: 10 px;
+	width: 100%;
+	
+
+}
+body{
+	background-image: url('./images/M.jpg');
+	background-position: 100 1000px;
+	font-family: Roboto,sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;	 
+	height: 2000px;
+
+}
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 3rem;
+	margin-top: 4rem;
+	text-align: center;
+}
+h3{	
+	text-align: center;
+	color: whitesmoke;
+	font-size: 5rem;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 2rem;
+	text-shadow: 2px 3px red;
+
+}
+h1{
+	color: whitesmoke;
+	font-size: 5rem;
+	font-weight: 700;
+	letter-spacing: 8px;
+	margin-bottom: 2rem;
+	text-shadow: 2px 3px red;
+}
+h2{
+	color: whitesmoke;
+	font-size: 4rem;
+	font-weight: 400;
+	text-shadow: 2px 3px red;
+}
+.image{
+	image-size: 20%;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	width: 1600px;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	transform: translateX(-20%);
+	box-shadow: 0rem -2rem 2rem black inset;
+}
+.image img{
+	height: 600px;
+	width: 600px;
+	border-radius: 50%;
+	border: 0px solid #fff;
+	float: left;
+	align-content: center;
+}
+p{
+	font-size: 2rem;
+	color: whitesmoke;
+	line-height: 5rem;
+	margin-bottom: 5rem;
+	transform: translateY(-114%);
+}
+.btn{
+	display: inline-block;
+	padding: 0.5rem 0.5rem;
+	background: white;
+	font-size: 2rem;
+	text-decoration: none;
+	color: green;
+	border-radius: 10px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btn1,.btn2{
+
+}
+.btn:hover{
+	background: #dadada;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+nav ul li a{
+	color: whitesmoke;
+	height: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 25px;
+	font-family: sans-serif;
+}
+a{
+	opacity: 90%;
+    position:relative;
+    display: inline-block;
+    padding: 0px 0px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    overflow: hidden;
+    transition: .2s;
+}				
+a:hover{
+    opacity: 70%;
+    color: #fff;
+    box-shadow: 0 0 10px red,0 0 40px red, 0 0 80px red;
+    box-shadow: 0 0 10px red,0 0 40px red, 0 0 80px red inset;
+    transition-delay: 1s;
+    border-radius: 20px;
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background:linear-gradient(90deg ,transparent, #2196f3);
+}
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background:linear-gradient(270deg ,transparent, #2196f3);
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+}
+a span:nth-child(2){
+    top: -100;
+    right: 0;
+    width: 4px;
+    height:100px;
+    background:linear-gradient(180deg ,transparent, #2196f3);
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition-delay: .5s;
+    transition: 1s;
+}
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background:linear-gradient(360deg ,transparent, #2196f3);
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+    }
+.Grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	margin-top: 10rem;
+}
+.Grid > div{
+	/*background: #eee;*/
+	padding: 1em;
+}
+.Grid > div:nth-child(odd){
+	background: #ddd;
+}
+.XX{
+	image-size: 20%;
+	margin-top: 0rem;
+	margin-bottom: 10rem;
+	margin-left: 10rem;
+	width: 670px;
+	height: 60vh;
+	display: flex;
+	transform: translateX(-20%);
+	border-radius: 10px;
+}
+.ZZ{
+	image-size: 20%;
+	margin-top: 0rem;
+	margin-bottom: 10rem;
+	margin-left: 10rem;
+	width: 670px;
+	height: 60vh;
+	display: flex;
+	transform: translateX(-20%);
+	border-radius: 10px;
+}
+.ZZ img{
+
+	width: 100%;
+	height: 100%;
+}
+.A{
+	image-size: 20%;
+	margin-top: 0rem;
+	margin-bottom: 10rem;
+	margin-left: 10rem;
+	width: 670px;
+	height: 60vh;
+	display: flex;
+	transform: translateX(-20%);
+	border-radius: 10px;
+}
+		
+	.all{
+		margin-top: 200px;
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+	}	
+	.sub{
+		float: left;
+		margin: 7px;
+		width: 32%;
+		height: 300px;
+		border: 2px solid gray;
+		
+	}
+	.sub img{
+		border-radius: 100%;
+
+		width: 100%;
+		height: 200px;
+	}
+	.sub p{
+		height: 100px;
+		width: 100%;
+		margin-top:110px;
+
+	}
+	.head{
+		text-align: center;
+		margin-top: 200px;
+	}
+	.talker{
+		margin-top: 20%;
+		color: black;
+		text-align: center;
+		font-size: 150%;
+		letter-spacing: 100%;
+
+	}
+	.pbtn{
+		margin-top: 10%;
+		margin-left: 40%;
+		text-transform: uppercase;
+		font-size: 50px;
+		text-shadow: -1rem -1rem  2rem red ;
+		color: red;
+	}
+		form{
+			margin-left: 29%;
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+			width: 50%;
+			height: 700px;
+			border-radius: 10px;
+			background-color: dimgray;
+			color: white;
+			margin-top: 50px;
+			cursor: pointer;
+		}
+	.bb{
+		border-radius: 9px;
+		margin-left: 40%;
+		width: 20%;
+		background-color: whitesmoke;
+		color: black;
+	}
+	.tt{
+		font-size: 20px;
+		margin-left: 40%;
+		color: whitesmoke;
+	}
+	.submit{
+		height: 30px;
+		width: 20%;
+		margin-left: 40%;
+		margin-top: 20px;
+		background: black;
+		color: whitesmoke;
+		border-radius: 12px;
+	}
+	.submit:hover{
+		background-color: gray;
+		color: black;
+	}
+	
+	.school{
+		margin-left: 35%;
+		border: solid red;
+		color: black;
+		height: 400px;
+		width: 500px;
+		margin-top: 5%;
+	}
+	.email{
+		
+		border: solid red;
+		width: 100%;
+		height: 100px;
+
+	}
+	.email img{
+		width: 20%;
+		height: 100%;
+	}
+	.email p{
+		font-size: 22px;
+		margin-left: 120px;
+	}
+	.footer{
+		margin-top: 20px;
+		margin-bottom: 150px;
+		width: 100%;
+		padding: 50px 15px;
+		background: #333;
+		color: #efefef;
+		display: flex;
+	}
+	.footer div{
+		text-align: center;
+
+	}
+	.footer div h3{
+		font-weight: 300;
+		margin-bottom: 30px;
+		letter-spacing: 1px;
+	}
+	.col-1 a{
+		display: block;
+		text-decoration: none;
+		color: #efefef;
+		margin-bottom: 10px;
+		margin-left: -300px;
+	}
+	form input{
+		width: 400px;
+		height: 45px;
+		border-radius: 4px;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 40px;
+		outline: none;
+		border: none;
+	}
+	form button{
+		background: transparent;
+		border: 2px solid #fff;
+		color: #fff;
+		border-radius: 30px;
+		padding: 10px 10px;
+		font-size: 15px;
+		cursor: pointer;
+	}
+	.ad{
+		margin-top: 25%;
+		font-size: 100%;
+		display: flex;
+	}
+	form{
+		margin-top: 10%;
+	}
+	.ac{
+		margin-bottom: -80%;
+		font-size: 100%;
+		display: flex;
+		transform: translateX(80%);
+	}
+
